@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f5ff;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    text-align: center;
+    padding: 18px 5px;
+    background: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+/* ===== ZOOM BUTTONS ===== */
+
+.zoom-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.zoom-controls button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #eee6ff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#zoomLevel {
+    font-weight: bold;
+    min-width: 50px;
+    text-align: center;
+}
+
+/* ===== TABLE ===== */
+
+.table-container {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 10px 3px;
+}
+
+table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 7px 2px;
+    word-wrap: break-word;
+}
+
+/* ===== HEADINGS ===== */
+
+th {
+    background: #eee6ff;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+/* Date column */
+
+th:first-child,
+td:first-child {
+    width: 29%;
+}
+
+/* Four task columns */
+
+th:not(:first-child),
+td:not(:first-child) {
+    width: 17.75%;
+}
+
+/* ===== DATES ===== */
+
+td:first-child {
+    background: white;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+/* ===== MARK BUTTON ===== */
+
+.mark-button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+}
+
+.mark-button:active {
+    transform: scale(0.9);
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    th {
+        font-size: 10px;
+    }
+
+    td:first-child {
+        font-size: 10px;
+    }
+
+    .mark-button {
+        font-size: 19px;
+        width: 26px;
+        height: 26px;
+    }
+}
+/* BIG AND BOLD HEADINGS */
+
+th {
+    font-size: 15px !important;
+    font-weight: 900 !important;
+    line-height: 1.4;
+    color: #222;
+}
+
+/* DATE HEADING */
+
+th:first-child {
+    font-size: 16px !important;
+    font-weight: 900 !important;
+    color: #222;
+}
+
+/* DATE ROWS */
+
+td:first-child {
+    font-size: 12px !important;
+    font-weight: bold;
+}

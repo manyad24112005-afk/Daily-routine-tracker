@@ -1,0 +1,9 @@
+{
+  "name": "Daily Routine Tracker",
+  "short_name": "Daily Routine",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8f5ff",
+  "theme_color": "#eee6ff",
+  "description": "Track my daily routine and habits."
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine Tracker</title>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#eee6ff">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌸 Daily Routine</h1>
+        <p>Track your daily habits</p>
+        <div class="month-selector">
+    <button id="previousMonth">‹</button>
+    <strong id="currentMonth"></strong>
+    <button id="nextMonth">›</button>
+</div>
+        <div class="zoom-controls">
+    <button onclick="zoomIn()">＋</button>
+    <span id="zoomLevel">100%</span>
+    <button onclick="zoomOut()">−</button>
+</div>
+    </header>
+
+    <main>
+        <div class="table-container">
+            <table id="routineTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Wake Up<br>6:00 AM</th>
+                        <th>No Sugar</th>
+                        <th>Reading</th>
+                        <th>Walking<br>1 Hour</th>
+                </thead>
+
+                <tbody id="routineBody">
+                    <!-- Dates will be added automatically -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
