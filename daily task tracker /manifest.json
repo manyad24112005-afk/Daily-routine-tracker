@@ -6,7 +6,7 @@
   "background_color": "#f8f5ff",
   "theme_color": "#eee6ff",
   "description": "Track my daily routine and habits.",
-"icons": [
+  "icons": [
   {
     "src": "icon-192.png",
     "sizes": "192x192",
